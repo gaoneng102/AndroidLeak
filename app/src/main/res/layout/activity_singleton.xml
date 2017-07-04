@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.gaoneng.androidleak.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.gaoneng.androidleak.SingletonActivity">
 
-    <ListView
-        android:id="@+id/android:list"
+    <Button
+        android:id="@+id/btn1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:drawSelectorOnTop="false" />
+        android:layout_height="wrap_content"
+        android:onClick="setSingleton"
+        android:text="singleton" />
 
 </LinearLayout>

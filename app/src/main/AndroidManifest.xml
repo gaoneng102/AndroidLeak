@@ -3,6 +3,7 @@
     package="com.gaoneng.androidleak">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,6 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StaticActivity"
+            android:label="@string/static_title" />
+        <activity
+            android:name=".InnerActivity"
+            android:label="@string/inner_title" />
+        <activity
+            android:name=".SingletonActivity"
+            android:label="@string/singleton_title" />
+        <activity android:name=".HandlerActivity"></activity>
     </application>
 
 </manifest>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidLeak</string>
+    <string name="static_title">Static</string>
+    <string name="inner_title">Inner</string>
+    <string name="singleton_title">Singleton</string>
+    <string name="handler_title">Handler</string>
+    <string name="threads_title">Threads</string>
+    <string name="sensor_title">Sensor Manager</string>
 </resources>
