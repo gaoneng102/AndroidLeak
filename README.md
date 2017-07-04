@@ -27,7 +27,7 @@
  }
  ```
  ### 常见内存泄露的情景
- 1. Static Activities or Views；
+ 1.Static Activities or Views；
  <p>
  在类中定义了静态Activity变量，把当前运行的Activity实例赋值于这个静态变量。如果这个静态变量在Activity生命周期结束
  后没有清空，就导致内存泄漏。因为static变量是贯穿这个应用的生命周期的，所以被泄漏的Activity就会一直存在于应用的进程
