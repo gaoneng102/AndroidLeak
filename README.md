@@ -51,9 +51,9 @@
  5. Handler；
  <p>
  当Handler中有延迟的的任务或是等待执行的任务队列过长，由于消息持有对Handler的引用，而Handler又持有对其外部类的潜在
- 引用，这条引用关系会一直保持到消息得到处理，而导致了Activity无法被垃圾回收器回收，而导致了内存泄露。<br/>
- <b>这里根据引用链观测，是Message.target引起的话，说明时外面Handler引起的内存泄露；如果是Message.callback引起的，
- 说明是post的Runable引起的内存泄露<b/>
+ 引用，这条引用关系会一直保持到消息得到处理，而导致了Activity无法被垃圾回收器回收，而导致了内存泄露.<br/>
+ 这里根据引用链观测，是Message.target引起的话，说明时外面Handler引起的内存泄露；如果是Message.callback引起的，
+ 说明是post的Runable引起的内存泄露
  <p/>
  6. 集合中对象没清理造成的内存泄漏；
  <p>
